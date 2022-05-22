@@ -255,5 +255,26 @@
         line-height: 1.133;  
 
     }
+    &--icecream{
+        transition-duration: 300ms;
+    }
+    &--icecream:hover {
+            transform: scale(1.2);
+            
+    }
+    &--coffee{
+        transition-duration: 300ms;
+    }
+    &--coffee:hover {
+            transform: scale(1.2);
+            
+    }
+    &--milkshake{
+        transition-duration: 300ms;
+    }
+    &--milkshake:hover {
+            transform: scale(1.2);
+            
+    }
 }
   }
