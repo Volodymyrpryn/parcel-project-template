@@ -1,0 +1,210 @@
+.contact__ice-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 31px;
+  list-style: none;
+  padding: 0px;
+}
+@media (max-width: 767px) {
+  .contact__ice-place {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.chicago,
+.los-angeles,
+.new-york {
+  width: 330px;
+  height: 572px;
+  background-color: white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding-left: 43px;
+  padding-top: 51px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .chicago,
+  .los-angeles,
+  .new-york {
+    width: 220px;
+    padding-left: 31px;
+  }
+}
+@media (max-width: 767px) {
+  .chicago,
+  .los-angeles,
+  .new-york {
+    width: 220px;
+    padding-left: 31px;
+  }
+}
+.category__cafe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 73px;
+  height: 28px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+
+  color: $white-title-color;
+  background-color: $product2-color;
+  margin: 0px;
+}
+
+.category__foodtruck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 138px;
+  height: 28px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  color: $white-title-color;
+  background-color: $product3-color;
+  margin: 0px;
+}
+.contact__title {
+  font-size: 16px;
+  line-height: 30px;
+  color: $secondary-text-color;
+  padding-top: 32px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.contact__worktime2 {
+  padding-bottom: 32px;
+}
+.contact__worktime2,
+.contact__worktime {
+  margin: 0px;
+  line-height: 30px;
+  color: $time-color;
+}
+.contact__description {
+  margin: 0px;
+  line-height: 30px;
+  color: $grey-text-color;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact__description,
+  .contact__title,
+  .contact__workday,
+  .contact__worktime2,
+  .contact__worktime {
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__description,
+  .contact__title,
+  .contact__workday,
+  .contact__worktime2,
+  .contact__worktime {
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 44px;
+  }
+}
+.contact__workday {
+  padding-top: 32px;
+  margin: 0px;
+  line-height: 30px;
+  color: $secondary-text-color;
+}
+.contact__description::after,
+.contact__worktime2::after {
+  display: block;
+  content: '';
+  width: 234px;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact__description::after,
+  .contact__worktime2::after {
+    width: 157px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__description::after,
+  .contact__worktime2::after {
+    width: 157px;
+  }
+}
+.contact__tel,
+.contact__email {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 30px;
+  color: $grey-text-color;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact__tel,
+  .contact__email {
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .contact__tel,
+  .contact__email {
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 44px;
+  }
+}
+.contact__buttons {
+  padding-top: 86px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .contact__buttons {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 54px;
+  }
+}
+.contact__button1 {
+  width: 198px;
+  height: 44px;
+  background-color: $accent-background-color;
+  border-radius: 22px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.contact__button2 {
+  width: 198px;
+  height: 44px;
+  background-color: $contacts-background;
+  border-radius: 22px;
+  border: none;
+  color: $accent-background-color;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .contact__button1 .contact__button2 {
+    width: 160px;
+  }
+}
+.contact__button1:hover,
+.contact__button2:hover {
+  cursor: pointer;
+}
