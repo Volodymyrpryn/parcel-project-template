@@ -635,6 +635,30 @@ html {
     font-size: 30px;
     line-height: 1.133;
   }
+  .products--icecream {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+  }
+  .products--icecream:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .products--coffee {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+  }
+  .products--coffee:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .products--milkshake {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+  }
+  .products--milkshake:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 ul {
