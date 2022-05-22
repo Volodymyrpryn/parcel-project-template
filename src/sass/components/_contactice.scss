@@ -1,7 +1,24 @@
+.contact__bg {
+  background: #FFF5F6;
+  background-image: url("/images/contactice/contactice_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 60%;
+  margin-top: 100px;
+  // background-position-x: center;
+}
+
+.contact__ice {
+  position: relative;
+  width: 100%;
+  top: -100px;
+}
+
+
 .contact__ice-place {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:  center;
   gap: 31px;
   list-style: none;
   padding: 0px;
@@ -171,6 +188,7 @@
   padding-top: 86px;
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 @media (max-width: 767px) {
   .contact__buttons {
@@ -207,4 +225,15 @@
 .contact__button1:hover,
 .contact__button2:hover {
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect (1px, 1px, 1px, 1px);
+  clip: rect (1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width:1px !important;
+  overflow:hidden;
 }
