@@ -640,24 +640,24 @@ html {
             transition-duration: 300ms;
   }
   .products--icecream:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .products--coffee {
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
   }
   .products--coffee:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .products--milkshake {
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
   }
   .products--milkshake:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
