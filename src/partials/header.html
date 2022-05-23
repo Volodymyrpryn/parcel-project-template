@@ -1,0 +1,140 @@
+<!----------header------------------>
+<header>
+  <nav class="navigation">
+    <div class="navigation__wrapper container">
+      <a href="index.html" class="logo logo--main"
+        ><img src="../src/images/hero-images/logo.png" alt="IceCream logo"
+      /></a>
+      <button class="navigation__burger">
+        <svg class="navigation__burger-icon">
+          <use href="./images/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <div class="navigation__items">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link active-page" href="">Home</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="">About us</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="">How it's made?</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="">Our products</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn--nav" data-modal-open>
+        Buy now
+        <svg class="btn-vector" width="4" height="8">
+          <use href="./images/sprite.svg#icon-Vector"></use>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <!--------- mobile menu ----->
+  <div class="menu">
+    <div class="menu__close">
+      <svg class="menu__close-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </div>
+
+    <button type="button" class="btn btn--mobile" data-modal-open>
+      Buy now
+      <svg class="btn-vector" width="4" height="8">
+        <use href="./images/sprite.svg#icon-Vector"></use>
+      </svg>
+    </button>
+
+    <div class="menu__list">
+      <ul class="menu__nav">
+        <li class="menu__nav-item">
+          <a class="menu__link active-page-menu" href="index.html">Home</a>
+        </li>
+        <li class="menu__nav-item">
+          <a class="menu__link" href="">About us</a>
+        </li>
+        <li class="menu__nav-item"><a class="menu__link" href="">How it's made?</a></li>
+        <li class="menu__nav-item"><a class="menu__link" href="">Our products</a></li>
+        <li class="menu__nav-item"><a class="menu__link" href="">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="tittle-wrapper">
+    <h1 class="secondary-title">
+      ice cream <br />
+      made with <br />
+      <span class="main-title">passion</span>
+    </h1>
+    <div class="hero-button-wrapper">
+      <button class="btn--pro">Products</button>
+      <button class="btn--made">How it’s made?</button>
+    </div>
+  </div>
+</section>
+
+<!----------backdrop, modal-window------------------>
+<!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-window>
+        <div class="modal__box">
+          <h4 class="modal__box-heading">Zostaw swoje dane w formularzu poniżej</h4>
+          <form class="modal__form">
+            <label for="user-name" class="modal__form-label">Imię</label>
+            <input
+              name="user-name"
+              type="text"
+              id="user-name"
+              class="modal__form-input user-name-icon"
+            />
+            <label for="user_tel" class="modal__form-label">Telefon</label>
+            <input
+              name="user-phone-number"
+              type="tel"
+              id="user_tel"
+              class="modal__form-input tel-icon"
+            />
+            <label for="user_email" class="modal__form-label">Email</label>
+            <input
+              name="user-email"
+              type="email"
+              id="user_email"
+              class="modal__form-input email-icon"
+            />
+            <label for="user_msg" class="modal__form-label">Komentarz</label>
+            <textarea
+              name="user-massage"
+              id="user_msg"
+              class="modal__form-input modal__form-textarea"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+            <div class="modal__policy-box">
+              <input
+                name="policy-declaration-checkbox"
+                type="checkbox"
+                id="policy_declaration"
+                class="modal__checkbox-policy_declaration visual-hidden"
+              />
+              <label for="policy_declaration" class="modal__policy-declaration"
+                >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności</a>.</label
+              >
+            </div>
+            <button type="submit" class="modal__form-btn btn btn--main">Wyślij</button>
+          </form>
+        </div>
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__close-icon" width="17" height="17">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div> -->
