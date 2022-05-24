@@ -6,7 +6,7 @@ ul {
   }
   .advantages,
   .gallery__img {
-    background-color: $secondary-background-color;
+    background-color: #fff5f6;
   }
   .advantages__tittle {
     font-family: 'Titan One';
@@ -15,14 +15,14 @@ ul {
     line-height: 41px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: $accent-text-color;
+    color: #d41443;
   }
   .advantages__text {
     font-family: DM Sans;
     font-weight: 700;
     font-style: normal;
     line-height: 20px;
-    color: $secondary-text-color;
+    color: #000000;
     margin: 0px;
   }
   .gallery__img {
@@ -36,7 +36,7 @@ ul {
     margin: 0px;
   }
   .gallery_item {
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
 }
@@ -139,9 +139,12 @@ ul {
     }
     .gallery__img {
       padding-top: 140px;
-      width: 1600px;
+      width: 100%;
       margin: 0px;
       margin-bottom: 100px;
+    }
+    .gallery__list {
+      width: 100%;
     }
   }
   
