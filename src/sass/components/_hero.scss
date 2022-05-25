@@ -1,18 +1,45 @@
 .hero {
   background-color: $hero-background-color;
+  &__box {
+    max-width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__title-box {
+    width: 277px;
+    flex-basis: calc(100% / 3);
+  }
+
+  &__title {
+    @extend .secondary-title;
+    color: $white-title-color;
+  }
+
+  &__description-wrapper {
+    margin-left: 110px;
+    line-height: 140%;
+  }
+
+  &__arrow {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
 }
 
 .btn--pro {
-  width: 102px;
-  height: 40px;
   color: #fff;
   border-radius: 22px;
   background-color: $accent-text-color;
+
+  &:hover {
+    background: #c7133e;
+  }
 }
 
 .btn--made {
-  width: 138px;
-  height: 40px;
   justify-content: end;
   align-items: center;
   background-color: $contacts-background;
@@ -20,7 +47,6 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 18px;
   text-align: center;
   border-width: 0;
@@ -31,9 +57,40 @@
   }
 }
 
-@media (max-width: 767px) {
+// ----------MEDIA-----------
+
+@media screen and (max-width: 767px) {
   .hero {
-    height: 502px;
+    &__description-wrapper {
+      display: none;
+    }
+
+    &__title-box {
+      margin-top: 120px;
+      margin-left: 20px;
+    }
+    &__title {
+      width: 218px;
+      height: 106px;
+      margin: 0;
+    }
+  }
+  .btn--pro {
+    width: 63px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .btn--made {
+    width: 83px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .hero-opportunities-list {
+    display: none;
+  }
+  .hero__box {
+    height: 422px;
+    max-width: 500px;
     margin: 0 auto;
     background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile.png),
       url(../images/hero-images/hero-ellipse/ellipse-mobile.png);
@@ -41,7 +98,7 @@
     background-position: bottom 0 left 117px, top 83px left 36px;
     background-size: 111px 410px, 346 344;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .hero {
+      .hero__box {
         background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile@2x.png),
           url(../images/hero-images/hero-ellipse/ellipse-mobile@2x.png);
       }
@@ -49,48 +106,182 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
-    height: 280px;
-    background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile.png),
-      url(../images/hero-images/hero-ellipse/ellipse-mobile.png);
+    height: 350px;
+    &__title {
+      font-size: 22px;
+    }
+    &__title-box {
+      padding-top: 15px;
+    }
+    &__description-wrapper {
+      width: 114px;
+      height: 48px;
+      font-size: 8;
+      line-height: 12px;
+      flex-basis: calc(100% / 3);
+    }
+  }
+
+  .btn--pro {
+    width: 63px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .btn--made {
+    width: 83px;
+    height: 24px;
+    font-size: 8px;
+  }
+
+  .hero-opportunities-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    flex-basis: calc(100% / 2);
+  }
+  .hero-opportunities-list-item {
+    text-align: right;
+    background-image: url(../images/hero-images/hero-circle/circle-tablet.png);
     background-repeat: no-repeat;
-    background-position: bottom 0 left 117px, top 83px left 36px;
-    background-size: 171px 410px, 346px 344px;
+    background-size: 16px 16px;
+    background-position: right 0 top 0;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/hero-images/hero-ice-cream/ice-cream-mobile@2x.png),
-          url(../images/hero-images/hero-ellipse/ellipse-mobile@2x.png);
+      .hero-opportunities-list-item {
+        background-image: url(../images/hero-images/hero-circle/circle-tablet@2x.png);
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+  .hero-opportunities-list-item-figures {
+    font-family: $title-font;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-text-color;
+    padding-right: 8px;
+  }
+  .hero-opportunities-list-item-desc {
+    font-family: $main-font;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $main-text-color;
+    padding-right: 8px;
+    margin: 0;
+  }
+
+  .hero__box {
+    max-width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    background-image: url(../images/hero-images/hero-girl/girl-tablet.png),
+      url(../images/hero-images/hero-milk/milk-tablet.png),
+      url(../images/hero-images/hero-ice-cream/ice-cream-tablet.png),
+      url(../images/hero-images/hero-ellipse/ellipse-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 168px 133px, 124px 126px, 143px 336px, 324px 322px;
+    background-position: left 95% bottom, left 0 bottom 28px, left 55% bottom, top left 62%;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .max-hero {
+        background-image: url(../images/hero-images/hero-girl/girl-tablet@2x.png),
+          url(../images/hero-images/hero-milk/milk-tablet@2x.png),
+          url(../images/hero-images/hero-ice-cream/ice-cream-tablet@2x.png),
+          url(../images/hero-images/hero-ellipse/ellipse-tablet@2x.png);
       }
     }
   }
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    height: 665px;
+    height: 585px;
     margin: 0 auto;
-    background-image: url(../images/hero-images/hero-girl/girl-desktop.png),
-      url(../images/hero-images/hero-milk/milk-desktop.png),
-      url(../images/hero-images/hero-ice-cream/ice-cream-desktop.png),
-      url(../images/hero-images/hero-circle/circle-desktop.png),
-      url(../images/hero-images/hero-circle/circle-desktop.png),
-      url(../images/hero-images/hero-ellipse/ellipse-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 293px 232px, 188px 191px, 236px 557px, 30px 30px, 30px 30px, 538px 538px;
-    background-position: left 100% bottom, left 0 top 429px, left 55% bottom, left 1070px top 153px,
-      left 1070px top 240px, left 65% top 52px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/hero-images/hero-girl/girl-desktop@2x.png),
-          url(../images/hero-images/hero-milk/milk-desktop@2x.png),
-          url(../images/hero-images/hero-ice-cream/ice-cream-desktop@2x.png),
-          url(../images/hero-images/hero-circle/circle-desktop@2x.png),
-          url(../images/hero-images/hero-circle/circle-desktop@2x.png),
-          url(../images/hero-images/hero-ellipse/ellipse-desktop@2x.png);
+
+    &__box {
+      max-width: 1050px;
+      height: 585px;
+      margin: 0 auto;
+      padding-left: 70px;
+      background-image: url(../images/hero-images/hero-girl/girl-desktop.png),
+        url(../images/hero-images/hero-milk/milk-desktop.png),
+        url(../images/hero-images/hero-ice-cream/ice-cream-desktop.png),
+        url(../images/hero-images/hero-ellipse/ellipse-desktop.png);
+      background-repeat: no-repeat;
+      background-size: 293px 232px, 188px 191px, 236px 557px, 538px 538px;
+      background-position: left 100% bottom, left bottom 45px, left 55% bottom, left 65% top 52px;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero__box {
+          background-image: url(../images/hero-images/hero-girl/girl-desktop@2x.png),
+            url(../images/hero-images/hero-milk/milk-desktop@2x.png),
+            url(../images/hero-images/hero-ice-cream/ice-cream-desktop@2x.png),
+            url(../images/hero-images/hero-ellipse/ellipse-desktop@2x.png);
+        }
       }
     }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__description-wrapper {
+      width: 200px;
+      height: 78px;
+    }
+  }
+
+  .btn--pro {
+    width: 102px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .btn--made {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .hero-opportunities-list {
+    margin-top: 73px;
+    flex-basis: calc(100% / 2);
+  }
+  .hero-opportunities-list-item {
+    text-align: right;
+    background-image: url(../images/hero-images/hero-circle/circle-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: right 0 top 0;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-opportunities-list-item {
+        background-image: url(../images/hero-images/hero-circle/circle-desktop@2x.png);
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  .hero-opportunities-list-item-figures {
+    font-size: 46px;
+    padding-right: 18px;
+    color: #d41443;
+    font-family: Titan One, cursive;
+  }
+  .hero-opportunities-list-item-desc {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.28;
+    padding-right: 18px;
   }
 }
