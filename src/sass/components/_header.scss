@@ -171,7 +171,7 @@
   .btn--nav {
     margin-top: 38px;
     // margin-right: 34px;
-    display: block;
+    display: block !important;
   }
 
   .navigation {
@@ -202,7 +202,7 @@
     padding-left: 46px;
   }
   .btn--nav {
-    display: block;
+    display: block !important;
   }
 
   .navigation {
