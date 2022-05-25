@@ -20,6 +20,7 @@
   &__description-wrapper {
     margin-left: 110px;
     line-height: 140%;
+    margin-bottom: 50px;
   }
 
   &__arrow {
@@ -116,11 +117,12 @@
       padding-top: 15px;
     }
     &__description-wrapper {
-      width: 114px;
+      max-width: 140px;
       height: 48px;
       font-size: 8;
       line-height: 12px;
       flex-basis: calc(100% / 3);
+      font-weight: 400 !important;
     }
   }
 
@@ -234,8 +236,10 @@
     }
 
     &__description-wrapper {
-      width: 200px;
+      max-width: 200px;
       height: 78px;
+      margin-bottom: 10px;
+      margin-top: 40px;
     }
   }
 
