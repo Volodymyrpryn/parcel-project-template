@@ -1,4 +1,4 @@
-<!----------header------------------>
+<!--------------------HEADER--------------->
 <header>
   <nav class="navigation">
     <div class="navigation__wrapper container">
@@ -13,19 +13,19 @@
       <div class="navigation__items">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a class="navigation__link active-page" href="">Home</a>
+            <a class="navigation__link active-page link" href="">Home</a>
           </li>
           <li class="navigation__list-item">
-            <a class="navigation__link" href="">About us</a>
+            <a class="navigation__link link" href="">About us</a>
           </li>
           <li class="navigation__list-item">
-            <a class="navigation__link" href="">How it's made?</a>
+            <a class="navigation__link link" href="">How it's made?</a>
           </li>
           <li class="navigation__list-item">
-            <a class="navigation__link" href="">Our products</a>
+            <a class="navigation__link link" href="">Our products</a>
           </li>
           <li class="navigation__list-item">
-            <a class="navigation__link" href="">Contact</a>
+            <a class="navigation__link link" href="">Contact</a>
           </li>
         </ul>
       </div>
@@ -68,73 +68,84 @@
   </div>
 </header>
 
+<!--------- HERO ----->
+
 <section class="hero">
-  <div class="tittle-wrapper">
-    <h1 class="secondary-title">
-      ice cream <br />
-      made with <br />
-      <span class="main-title">passion</span>
-    </h1>
-    <div class="hero-button-wrapper">
-      <button class="btn--pro">Products</button>
-      <button class="btn--made">How it’s made?</button>
+  <div class="hero__box">
+    <!--------- title ----->
+
+    <div class="hero__title-box">
+      <h1 class="hero__title">
+        ice cream <br />
+        made with <br />
+        <span class="main-title">passion</span>
+      </h1>
+      <div class="hero-button-wrapper">
+        <button class="btn btn--pro">Products</button>
+        <button class="btn btn--made">How it’s made?</button>
+      </div>
+    </div>
+
+    <!------- opportunities ----->
+
+    <ul class="hero-opportunities-list list">
+      <li class="hero-opportunities-list-item">
+        <span class="hero-opportunities-list-item-figures">16</span>
+        <p class="hero-opportunities-list-item-desc">cafes</p>
+      </li>
+
+      <li class="hero-opportunities-list-item">
+        <span class="hero-opportunities-list-item-figures">23</span>
+        <p class="hero-opportunities-list-item-desc">food trucks</p>
+      </li>
+    </ul>
+
+    <!--------- description ----->
+
+    <div class="hero__description-wrapper">
+      <p class="hero-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minus alias provident
+        accusantium sapiente
+      </p>
+      <a href="">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-images/hero-arrow/arrow-desktop-webp1x.webp 1x,
+              ./images/hero-images/hero-arrow/arrow-desktop-webp2x.webp 2x,
+              ./images/hero-images/hero-arrow/arrow-desktop1x.jpg       1x,
+              ./images/hero-images/hero-arrow/arrow-desktop2x.jpg       2x
+            "
+            type="image/webp"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-images/hero-arrow/arrow-tablet-webp1x.webp 1x,
+              ./images/hero-images/hero-arrow/arrow-tablet-webp2x.webp 2x,
+              ./images/hero-images/hero-arrow/arrow-tablet1x.jpg       1x,
+              ./images/hero-images/hero-arrow/arrow-tablet2x.jpg       2x
+            "
+            type="image/webp"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/hero-images/hero-arrow/arrow-mobile-webp1x.webp 1x,
+              ./images/hero-images/hero-arrow/arrow-mobile-webp2x.webp 2x,
+              ./images/hero-images/hero-arrow/arrow-mobile1x.jpg       1x,
+              ./images/hero-images/hero-arrow/arrow-mobile2x.jpg       2x
+            "
+            type="image/webp"
+            media="(min-width:320px)"
+          />
+          <img
+            class="hero__arrow"
+            src="./images/hero-images/hero-arrow/arrow-mobile1x.jpg"
+            alt="rightarrow photo"
+          />
+        </picture>
+      </a>
     </div>
   </div>
 </section>
-
-<!----------backdrop, modal-window------------------>
-<!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal" data-modal-window>
-        <div class="modal__box">
-          <h4 class="modal__box-heading">Zostaw swoje dane w formularzu poniżej</h4>
-          <form class="modal__form">
-            <label for="user-name" class="modal__form-label">Imię</label>
-            <input
-              name="user-name"
-              type="text"
-              id="user-name"
-              class="modal__form-input user-name-icon"
-            />
-            <label for="user_tel" class="modal__form-label">Telefon</label>
-            <input
-              name="user-phone-number"
-              type="tel"
-              id="user_tel"
-              class="modal__form-input tel-icon"
-            />
-            <label for="user_email" class="modal__form-label">Email</label>
-            <input
-              name="user-email"
-              type="email"
-              id="user_email"
-              class="modal__form-input email-icon"
-            />
-            <label for="user_msg" class="modal__form-label">Komentarz</label>
-            <textarea
-              name="user-massage"
-              id="user_msg"
-              class="modal__form-input modal__form-textarea"
-              placeholder="Wprowadź tekst"
-            ></textarea>
-            <div class="modal__policy-box">
-              <input
-                name="policy-declaration-checkbox"
-                type="checkbox"
-                id="policy_declaration"
-                class="modal__checkbox-policy_declaration visual-hidden"
-              />
-              <label for="policy_declaration" class="modal__policy-declaration"
-                >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-                <a href="#">Politykę Prywatności</a>.</label
-              >
-            </div>
-            <button type="submit" class="modal__form-btn btn btn--main">Wyślij</button>
-          </form>
-        </div>
-        <button class="modal__close-btn" type="button" data-modal-close>
-          <svg class="modal__close-icon" width="17" height="17">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div> -->
