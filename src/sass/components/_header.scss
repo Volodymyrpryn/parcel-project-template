@@ -1,9 +1,10 @@
 // -----------NAV MENU----------
-
+.header {
+  position: relative;
+  z-index: 5;
+  background-color: transparent;
+}
 .navigation {
-  background-color: $hero-background-color;
-  height: 60px;
-
   &__wrapper {
     height: 100%;
     align-items: center;
