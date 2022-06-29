@@ -95,9 +95,9 @@
 .menu {
   display: block;
   width: 254px;
-  height: 482px;
+  height: 100vh;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding-bottom: 60px;
