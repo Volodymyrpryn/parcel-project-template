@@ -52,7 +52,6 @@
   &:hover,
   &:focus {
     background: #c7133e;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 .btn-how-its-made {
@@ -63,7 +62,6 @@
   &:hover,
   &:focus {
     background: $hover-background;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 .hero-arrow {
@@ -119,8 +117,6 @@
     background-image: url(../images/hero-images/hero-ice-cream/ice-cream-tablet.png),
       url(../images/hero-images/hero-ellipse/ellipse-tablet.png);
     background-repeat: no-repeat;
-    // background-size: 143px 336px, 324px 322px;
-    // background-position: left 55% bottom, top 50% left 62%;
     background-size: 143px 336px, 324px 322px;
     background-position: left 80% bottom, top 60% left 90%;
     @media screen and (min-device-pixel-ratio: 2),
@@ -144,8 +140,7 @@
       url(../images/hero-images/hero-ellipse/ellipse-tablet.png);
     background-repeat: no-repeat;
     background-size: 168px 133px, 124px 126px, 143px 336px, 324px 322px;
-    background-position: left 85% bottom, left 0 bottom 28px, left 55% bottom,
-      top 50% left 62%;
+    background-position: left 85% bottom, left 0 bottom 28px, left 55% bottom, top 50% left 62%;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -246,10 +241,9 @@
       url(../images/hero-images/hero-circle/circle-desktop.png),
       url(../images/hero-images/hero-ellipse/ellipse-desktop.png);
     background-repeat: no-repeat;
-    background-size: 293px 232px, 188px 191px, 236px 557px, 30px 30px, 30px 30px,
-      538px 538px;
-    background-position: left 100% bottom, left 0 top 429px, left 55% bottom,
-      left 1070px top 153px, left 1070px top 240px, left 65% top 52px;
+    background-size: 293px 232px, 188px 191px, 236px 557px, 30px 30px, 30px 30px, 538px 538px;
+    background-position: left 100% bottom, left 0 top 429px, left 55% bottom, left 1070px top 153px,
+      left 1070px top 240px, left 65% top 52px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
